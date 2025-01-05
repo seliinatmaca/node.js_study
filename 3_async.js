@@ -25,22 +25,22 @@
 
 const fs = require("fs");
 
-// fs.readFile("./data/örnek.txt", "utf-8", (err, data) => {
-//   if (err) return console.log("okuma işleminde hata !!! 💥 ", err);
+fs.readFile("./data/örnek.txt", "utf-8", (err, data) => {
+  if (err) return console.log("okuma işleminde hata !!! 💥 ", err);
 
-//   console.log("Dosya başarıyla okundu", data);
-// });
-// fs.writeFile("./data/output-2.txt", "selamlar", (err) => {
-//   if (err) return console.log("yazma işleminda hata!!! 💥", err);
+  console.log("Dosya başarıyla okundu", data);
+});
+fs.writeFile("./data/output-2.txt", "selamlar", (err) => {
+  if (err) return console.log("yazma işleminda hata!!! 💥", err);
 
-//   console.log("🎾 Yeni dosya başatıyla oluşturuldu");
-// });
+  console.log("🎾 Yeni dosya başatıyla oluşturuldu");
+});
 
-// fs.unlink("./data/bozuk.txt", (err) => {
-//   if (err) return console.log("silme işleminda hata!!! 💥", err);
+fs.unlink("./data/bozuk.txt", (err) => {
+  if (err) return console.log("silme işleminda hata!!! 💥", err);
 
-//   console.log("🎾 Dosya başarıyla silindi");
-// });
+  console.log("🎾 Dosya başarıyla silindi");
+});
 
 // Okuma işleminin okuma işlemine bağımlı olduğu seneryoda da asenkron yapıyı kullanabiliriz.
 
